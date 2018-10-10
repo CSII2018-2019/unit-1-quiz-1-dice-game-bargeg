@@ -7,6 +7,7 @@ public class QuizDiceGame {
 	int compWins = 0;
 	int playWins = 0;
 	while (numberLoop <= 10) {
+		//start with randomizing the rolls 
 		int dieRoll = (int)(Math.random() * 6) + 1;
 		int playerRoll = (int)(Math.random() * 6) + 1;
 		
