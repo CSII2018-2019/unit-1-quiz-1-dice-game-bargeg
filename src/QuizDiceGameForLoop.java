@@ -1,21 +1,11 @@
-//Genna Barge - Quiz Programming Dice Assignment 
+
 public class QuizDiceGame {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	int numberLoop = 1; 
 	int compWins = 0;
 	int playWins = 0;
-	for (int i=0; i < 10; i++) {
-		int whichDie = (int) (Math.random () * 2) +1;
-		if (whichDie == 1) {
-			RegularDice dice1 = new RegularDice();
-			RegularDice dice2 = new RegularDice();
-		}
-		else {
-			LoadedDice dice1 = new LoadedDice();
-			LoadedDice dice2 = new LoadedDice();
-		}
+	for(int i=0; i  < 10; i++) {
 		//start with randomizing the rolls 
 		int dieRoll = (int)(Math.random() * 6) + 1;
 		int playerRoll = (int)(Math.random() * 6) + 1;
@@ -32,13 +22,10 @@ public class QuizDiceGame {
 			System.out.println("The player takes this one!!");
 		}
 		else if (playerRoll == dieRoll) {
-			playWins = playWins;
-			compWins = compWins; 
 			System.out.println("Looks like we have a tie..");
 			
 		}
-		
-		numberLoop++;
+	
 		}
 	
 	System.out.println("And the results...");
